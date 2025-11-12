@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDa Prime (EDP) - Secure School Printing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header {
+            background-color: #004080;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0066cc;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #0055aa;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #004080;
+        }
+        .services, .security {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            flex: 1 1 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 16px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #004080;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0066cc;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EDa Prime (EDP)</h1>
+    <p>Secure & Confidential Printing for Schools</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="#security">Security</a>
+    <a href="#quote">Request Quote</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Examination Papers</h3>
+            <p>Printing and binding of secure examination papers for all levels.</p>
+        </div>
+        <div class="card">
+            <h3>School Documents</h3>
+            <p>Printing quizzes, timetables, reports, and other academic documents.</p>
+        </div>
+        <div class="card">
+            <h3>Binding & Finishing</h3>
+            <p>Professional binding and finishing for a clean, polished look.</p>
+        </div>
+    </div>
+</section>
+
+<section id="security">
+    <h2>Our Confidentiality Measures</h2>
+    <div class="security">
+        <div class="card">
+            <h3>Secure Printing</h3>
+            <p>Limited access to printing machines and staff to prevent leaks.</p>
+        </div>
+        <div class="card">
+            <h3>Data Protection</h3>
+            <p>Encrypted digital files and NDAs with all personnel.</p>
+        </div>
+        <div class="card">
+            <h3>Delivery Safety</h3>
+            <p>Secure packaging and trusted delivery to ensure documents reach safely.</p>
+        </div>
+    </div>
+</section>
+
+<section id="quote">
+    <h2>Request a Quote</h2>
+    <form id="quoteForm">
+        <label for="school">School Name:</label>
+        <input type="text" id="school" name="school" required>
+
+        <label for="document">Document Type:</label>
+        <select id="document" name="document" required>
+            <option value="exam">Examination Papers</option>
+            <option value="quiz">Quiz Papers</option>
+            <option value="report">Reports</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="pages">Number of Pages:</label>
+        <input type="number" id="pages" name="pages" required>
+
+        <label for="urgency">Urgency:</label>
+        <select id="urgency" name="urgency" required>
+            <option value="standard">Standard</option>
+            <option value="rush">Rush</option>
+        </select>
+
+        <label for="message">Additional Notes:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@edaprimegh.com</p>
+    <p>Phone: +233 24 000 0000</p>
+    <p>Location: Accra, Ghana</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 EDa Prime (EDP) | All Rights Reserved</p>
+</footer>
+
+<script>
+    const form = document.getElementById('quoteForm');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Thank you! Your quote request has been submitted. We will contact you soon.');
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
